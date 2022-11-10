@@ -2,6 +2,7 @@ require "grammarstats"
 
 RSpec.describe GrammarStats do 
  #'Checks' tests::
+ #
   it "returns true if starting with a capital." do 
     grammar = GrammarStats.new 
     expect(grammar.check("I love to listen to the guitar.")).to eq true 
@@ -19,6 +20,7 @@ RSpec.describe GrammarStats do
     expect(grammar.check("I love to listen to the guitar")).to eq false
   end
  #'Percentage_good' tests::
+ #
   it "returns percentage of successful texts checked" do 
     grammar = GrammarStats.new
     grammar.check("I love to listen to the guitar.") 
@@ -40,7 +42,7 @@ RSpec.describe GrammarStats do
     grammar.check("I love to listen to the guitar.") 
     grammar.check("i love to listen to the guitar")
     grammar.check("I love to listen to the guitar.") 
-    expect(grammar.percentage_good).to eq 66
+    expect(grammar.percentage_good).to eq 67
   end 
   it "returns percentage of successful texts checked" do 
     grammar = GrammarStats.new
