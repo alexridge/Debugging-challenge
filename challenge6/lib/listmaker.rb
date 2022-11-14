@@ -22,6 +22,6 @@ class ListMaker
   def remove_todo(number)
     # remove completed tasks
     # @count -= 1 
-    @todos.delete_at(number -1)
+    @todos.delete_at(number - 1)
   end 
 end 
