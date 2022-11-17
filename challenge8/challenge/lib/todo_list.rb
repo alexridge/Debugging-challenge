@@ -6,13 +6,14 @@ class TodoList
 
   def add(todo) # todo is an instance of Todo
     # Returns nothing
-  if todo.include?("TODO:")
-    @incompleted << todo
-  elsif todo.include?("DONE:")
-    @completed << todo 
-  else 
-    @incompleted << "TODO: #{todo}"
-  end 
+    if todo.include?("TODO:")
+      @incompleted << todo
+    elsif todo.include?("DONE:")
+      @completed << todo 
+    else 
+      @incompleted << "TODO: #{todo}"
+    end 
+    return 
   end
 
   def incomplete

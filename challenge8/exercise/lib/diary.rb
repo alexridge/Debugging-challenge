@@ -17,7 +17,7 @@ class Diary
     # Returns the number of words in all diary entries
     # HINT: This method should make use of the `count_words` method on DiaryEntry.
     @entries.sum(&:count_words)
-end 
+  end 
 
   def reading_time(wpm) # wpm is an integer representing
                         # the number of words the user can read per minute
